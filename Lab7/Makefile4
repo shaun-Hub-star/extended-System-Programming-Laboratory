@@ -1,0 +1,10 @@
+#make file - this is a comment section
+ 
+CC=gcc  #compiler
+TARGET=task4 #target file name
+ 
+all:	task4.o LineParser.o
+	$(CC) -Wall -g task4.c LineParser.c -o $(TARGET)
+ 
+clean:
+	rm *.o $(TARGET)
